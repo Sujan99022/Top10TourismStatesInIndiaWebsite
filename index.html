@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/726b0b9ea4.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="main.css">  
+</head>
+  <body>
+   <div class="container-fluid text-center" id="main-container">
+      <p><a style="color: rgb(204, 0, 255);border: 1px solid rgba(1, 1, 1, 0.553);" class="1" href="/index.html">Home <i class="fa fa-home" aria-hidden="true"></i></a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn">gujarat</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn1">karnataka</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn2">madhya Pradesh</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn3">maharashtra</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn4">andra Pradesh</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn5">rajasthan</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn6">tamilNadu</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn7">telangana</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn8">uttar Pradesh</a></p>
+       <p><a style="cursor: pointer;" id="add-text-btn9">west Bengal</a></p>
+     </div>
+     <div class="container mb-4 ">
+      <div class="input-group">
+         <input type="text" class="form-control" id="searchInput" placeholder="Search By State Name">
+         <div class="input-group-append">
+           <button class="btn buttonSearch" type="button" onclick="search()">Search</button>
+         </div>
+       </div>
+       <p class="alertMessage text-center mt-2">Enter only one state name at a time!</p>
+     </div>
+     <section id="statetListing">
+     <div class="main-entry">
+        <p><span style="color: white;">#</span><span style="color: orange;">EXP</span><span style="color: white;">L</span><span style="color: green;">ORE</span></p>
+     </div>
+     <div class="main-entry2">
+        <p><span style="color: white;">#</span><span style="color: orange;">IN</span><span style="color: white;">D</span><span style="color: green;">IA</span></p>
+     </div>
+    <div class="jumbotron jumbotron-fluid pb-0 mb-0 pt-0 mt-0 cardd" id="jum1">
+        <div id="back2" style="padding-top: 80px;">
+        <div class="container text-center">
+            <h1 id="main-line mb-0" style="letter-spacing: .7rem; text-transform:uppercase;font-weight: 400; transform: translateY(20px);"><span style="color: red;">T</span><span style="color: white;">ourist</span> <span style="color: red;">G</span><span style="color: white;">uide</span> <span style="color: red;">P</span><span style="color: white;">laces</span> <span style="color: red;">o</span><span style="color: white;">f</span> <span style="color: red;">I</span><span style="color: white;">ndia</span> <i class="fa fa-map text-white" aria-hidden="true"></i></h1>
+
+            <p class="exin"><span style="color: white;">#</span> <span style="color: orange;">EXP</span><span class="card-titlee" style="color: white;">L</span><span style="color: green;">ORE</span> <span style="color: orange;">IN</span><span style="color: white;">D</span><span style="color: green;">IA</span></p>
+              <div class="row" style="display: flex; justify-content:center;">
+                <div class="col-1 d-md-block d-none">
+                   <div class="g0">
+                       <img src="images/g0.jpg">
+                   </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                    <div class="g1">
+                        <img class="img-fluid" src="images/g1.jpg">
+                     </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                    <div class="g2">
+                        <img class="img-fluid" src="images/g2.jpg">
+                     </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                    <div class="g11">
+                        <img class="img-fluid" src="images/g11.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="india">
+                        <img src="images/india.jpg" alt="indiaMap">
+                      </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                    <div class="g12">
+                        <img class="img-fluid" src="images/g12.jpg">
+                    </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                    <div class="g3">
+                        <img class="img-fluid" src="images/g3.jpg">
+                      </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                    <div class="g4">
+                        <img class="img-fluid" src="images/g4.jpg">
+                      </div>
+                </div>
+                <div class="col-1 d-md-block d-none">
+                     <div class="g5">
+                        <img src="images/g5.jpg">
+                     </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    <div class="container" style="margin-top: 80px;">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="tamilNadu">
+           <div class="card cardd">
+            <div class="map">
+                <div class="text-center">
+              <p class="map1 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map2 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr"></div>
+            <div class="over">
+             <img class="card-img-top first" src="https://www.indianpanorama.in/blog/wp-content/uploads/2019/04/Tourist-Places-to-Visit-in-Tamil-Nadu-810x540.png">
+            </div>
+             <div class="over">
+                <div class="mapouter card-img-top second"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=tamilnadu&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">Tamil Nadu</h4>
+               <p class="card-text text-justify">&nbsp; Tamil Nadu is a state in southern India. It is the tenth largest Indian state by area and the sixth largest by population. Its capital and largest city is Chennai. Tamil Nadu is the home of the Tamil people, whose Tamil language—one of the longest surviving classical languages in the world—is widely spoken in the state and serves as its official language.The state lies in the southernmost part of the Indian peninsula, and is bordered by the Indian union territory of Puducherry and the states of Kerala, Karnataka, and Andhra Pradesh, as well as an international maritime border with Sri Lanka.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/tamilNadu.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="uttarPradesh">
+           <div class="card cardd">
+            <div class="map101">
+                <div class="text-center">
+              <p class="map3 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map4 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr1"></div>
+            <div class="over">
+             <img class="card-img-top first1" src="https://1.bp.blogspot.com/-NXiXjRrqiMo/YNNaYnVLrlI/AAAAAAAAAd4/FUYcMV1f5vAtL3ixy-7i0vP8vo84z16_wCLcBGAsYHQ/s600/Place%2Bto%2Bvisit%2Bin%2BUttar%2BPradesh.png">
+            </div>
+             <div class="over"> <!--card-img-top second1-->
+                <div class="mapouter card-img-top second1"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=uttar pradesh&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">uttar pradesh</h4>
+               <p class="card-text text-justify">&nbsp; Uttar Pradesh is a state in northern India. With over 200 million inhabitants, it is the most populated state in India as well as the most populous country subdivision in the world.[13] It was established in 1950 after India had become a republic. It was a successor to the United Provinces (UP) during the period of the Dominion of India (1947–1950), which in turn was a successor to the United Provinces (UP) established in 1935, and eventually of the United Provinces of Agra and Oudh established in 1902 during the British Raj. The state is divided into 18 divisions and 75 districts, with the state capital being Lucknow, and Prayagraj serving as the judicial capital.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/uttarPradesh.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="karnataka">
+           <div class="card cardd">
+            <div class="map102">
+                <div class="text-center">
+              <p class="map5 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map6 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr2"></div>
+            <div class="over">
+             <img class="card-img-top first2" src="https://www.sushanttravels.com/blog/2019/11/1573718583.jpg">
+            </div>
+             <div class="over">
+                <div class="mapouter card-img-top second2"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=karnataka&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">karnataka</h4>
+               <p class="card-text text-justify">&nbsp; Karnataka is a state in the southwestern region of India. It was formed on 1 November 1956, with the passage of the States Reorganisation Act. Originally known as Mysore State, it was renamed Karnataka in 1973. The state corresponds to the Carnatic region. Its capital and largest city is Bengaluru.Karnataka is bordered by the Arabian Sea to the west, Goa to the northwest, Maharashtra to the north, Telangana to the northeast, Andhra Pradesh to the east, Tamil Nadu to the southeast, and Kerala to the southwest. It is the only southern state to have land borders with all of the other four southern Indian sister states. The state covers an area of 191,791 square kilometres (74,051 sq mi), or 5.83 percent of the total geographical area of India.[12]</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/karnataka.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="andraPradesh">
+           <div class="card cardd">
+            <div class="map103">
+                <div class="text-center">
+              <p class="map7 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map8 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr3"></div>
+            <div class="over">
+             <img class="card-img-top first3" src="https://www.adotrip.com/public/images/state/contentImg/5f45e741406ad.jpg">
+            </div>
+             <div class="over">
+                <div class="mapouter card-img-top second3"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=andrapradesh&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">andra pradesh</h4>
+               <p class="card-text text-justify">&nbsp; Andhra Pradesh is a state in the south-eastern coastal region of India.[15] It is the seventh-largest state by area covering an area of 162,975 km2 (62,925 sq mi)[5] and tenth-most populous state with 49,386,799 inhabitants.[16][17] It is bordered by Telangana to the north-west, Chhattisgarh to the north, Odisha to the north-east, Tamil Nadu to the south, Karnataka to the west and the Bay of Bengal to the east.[18] It has the second longest coastline in India after Gujarat, of about 974 km (605 mi).[19]</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/andraPradesh.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="maharashtra">
+           <div class="card cardd">
+            <div class="map104">
+                <div class="text-center">
+              <p class="map9 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map10 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr4"></div>
+            <div class="over">
+             <img class="card-img-top first4" src="https://images.news18.com/ibnkhabar/uploads/2022/07/Maharashtra.jpg">
+            </div>
+             <div class="over">
+             <div class="mapouter card-img-top second4"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=maharastra&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+             </div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">maharashtra</h4>
+               <p class="card-text text-justify">&nbsp; Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. Maharashtra is the second-most populous state in India and the second-most populous country subdivision globally. It was formed on 1 May 1960 by splitting the bilingual Bombay State, which had existed since 1956, into majority Marathi-speaking Maharashtra and Gujarati-speaking Gujarat. Maharashtra is home to the Marathi people, the predominant ethno-linguistic group, who speak the Marathi language, the official language of the state.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/maharashtra.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="telangana">
+           <div class="card cardd">
+            <div class="map105">
+                <div class="text-center">
+              <p class="map11 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map12 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr5"></div>
+            <div class="over">
+             <img class="card-img-top first5" src="https://www.bestbus.in/assets/images/news-cms/hyderabad_tourist_place_name.jpeg">
+            </div>
+             <div class="over">
+             <div class="mapouter card-img-top second5"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=telangana&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+             </div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">telangana</h4>
+               <p class="card-text text-justify">&nbsp; eleventh-largest state and the twelfth-most populated state in India with a geographical area of 112,077 km2 (43,273 sq mi) and 35,193,978 residents as per 2011 census.[12] On 2 June 2014, the area was separated from the northwestern part of Andhra Pradesh as the newly formed state with Hyderabad as its capital. Its other major cities include Warangal, Nizamabad, Khammam, Karimnagar and Ramagundam.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/telangana.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="madhyaPradesh">
+           <div class="card cardd">
+            <div class="map106">
+                <div class="text-center">
+              <p class="map13 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map14 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr6"></div>
+            <div class="over">
+             <img class="card-img-top first6" src="https://www.fabmytrip.com/blog/wp-content/uploads/2021/08/Indore-Ujjain-Maheshwar-Omkareshware-Mandu.jpg">
+            </div>
+             <div class="over">
+             <div class="mapouter card-img-top second6"><div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=madhya pradesh&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+             </div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">madhya pradesh</h4>
+               <p class="card-text text-justify">&nbsp; Madhya Pradesh is a state in central India. Its capital is Bhopal, and the largest city is Indore, with Jabalpur, Ujjain, Gwalior, Sagar, and Rewa being the other major cities. Madhya Pradesh is the second largest Indian state by area and the fifth largest state by population with over 72 million residents. It borders the states of Uttar Pradesh to the northeast, Chhattisgarh to the east, Maharashtra to the south, Gujarat to the west, and Rajasthan to the northwest.[11]</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/madhyaPradesh.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="westBengal">
+           <div class="card cardd">
+            <div class="map107">
+                <div class="text-center">
+              <p class="map15 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map16 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr7"></div>
+            <div class="over">
+             <img class="card-img-top first7" src="https://www.adotrip.com/public/images/state/contentImg/5f48f982d3cb0.jpg">
+            </div>
+             <div class="over">
+             <div class="mapouter card-img-top second7"><div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=west bengal&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">west bengal</h4>
+               <p class="card-text text-justify">&nbsp; West Bengal is a state in the eastern portion of India. It is situated along the Bay of Bengal, along with a population of over 91 million inhabitants within an area of 88,752 km2 (34,267 sq mi). West Bengal is the fourth-most populous and thirteenth-largest state by area in India, as well as the eighth-most populous country subdivision of the world.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/westBengal.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="gujarat">
+           <div class="card cardd">
+            <div class="map108">
+                <div class="text-center">
+              <p class="map17 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map18 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr8"></div>
+            <div class="over">
+             <img class="card-img-top first8" src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/08/11/7b861dc1ff7d62292cbba44574107da31660190771625276_original.jpg?impolicy=abp_cdn&imwidth=650">
+            </div>
+             <div class="over">
+             <div class="mapouter card-img-top second8"><div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=gujarat&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">gujarat</h4>
+               <p class="card-text text-justify">&nbsp; Gujarat is a state along the western coast of India. Its coastline of about 1,600 km (990 mi) is the longest in the country, most of which lies on the Kathiawar peninsula. Gujarat is the fifth-largest Indian state by area, covering some 196,024 km2 (75,685 sq mi); and the ninth-most populous state, with a population of 60.4 million. It is bordered by Rajasthan to the northeast, Dadra and Nagar Haveli and Daman and Diu to the south, Maharashtra to the southeast, Madhya Pradesh to the east, and the Arabian Sea and the Pakistani province of Sindh to the west.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/gujarat.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-2 my-3 cardd" id="rajasthan">
+           <div class="card cardd">
+            <div class="map109">
+                <div class="text-center">
+              <p class="map19 py-0">MAP <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+               <p class="map20 py-0">Home <i class="fa fa-home" aria-hidden="true"></i></p>
+            </div>
+            </div>
+            <div class="hr9"></div>
+            <div class="over">
+             <img class="card-img-top first9" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_y6WCu7mLENjHfeafQTlG3tIyvvFvxIWjDg&usqp=CAU">
+            </div>
+             <div class="over">
+             <div class="mapouter card-img-top second9"><div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=rajastan&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div></div>
+            </div>
+
+             <div class="card-body">
+               <h4 class="card-title text-center title card-titlee">rajasthan</h4>
+               <p class="card-text text-justify">&nbsp; Rajasthan is a state in northern India.[9][10][11] It covers 342,239 square kilometres (132,139 sq mi) or 10.4 per cent of India's total geographical area. It is the largest Indian state by area and the seventh largest by population. It is on India's northwestern side, where it comprises most of the wide and inhospitable Thar Desert (also known as the Great Indian Desert) and shares a border with the Pakistani provinces of Punjab to the northwest and Sindh to the west, along the Sutlej-Indus River valley.</p>
+             </div>
+             <div class="card-footer">
+                <div class="text-right">
+                     <a class="visit" style="text-decoration: none;" href="places/rajasthan.html">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+   </section>
+    <div class="footer">
+        <div class="text-center" id="footer">
+            <p>Designed/Developed by sujan r</p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+      $("#add-text-btn").click(function(){
+        var textToAdd = $("#add-text-btn").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn1").click(function(){
+        var textToAdd = $("#add-text-btn1").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn2").click(function(){
+        var textToAdd = $("#add-text-btn2").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn3").click(function(){
+        var textToAdd = $("#add-text-btn3").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn4").click(function(){
+        var textToAdd = $("#add-text-btn4").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn5").click(function(){
+        var textToAdd = $("#add-text-btn5").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn6").click(function(){
+        var textToAdd = $("#add-text-btn6").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn7").click(function(){
+        var textToAdd = $("#add-text-btn7").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn8").click(function(){
+        var textToAdd = $("#add-text-btn8").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+$(document).ready(function(){
+      $("#add-text-btn9").click(function(){
+        var textToAdd = $("#add-text-btn9").text();
+        var currentText = $("#searchInput").val();
+        $("#searchInput").val(textToAdd);
+      });
+    });
+
+
+    </script>
+   </body>
+</html>

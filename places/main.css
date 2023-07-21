@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.7rem;
+    scroll-behavior: smooth;
+}
+html {
+    --scrollbarBG: rgb(14, 19, 39);
+    --thumbBG: #ff0000;
+  }
+body::-webkit-scrollbar {
+    width: 11px;
+    overflow-x: hidden;
+  }
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    background: radial-gradient(rgb(11, 15, 47),rgb(14, 19, 39));
+  }
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+.main-entry{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: rgb(56, 14, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    animation: me 1s linear 1s forwards normal running;
+}
+.main-entry p{
+    color: white;
+    font-size: 100px;
+    letter-spacing: 2.7rem;
+    line-height: 1.7rem;
+}
+@media (max-width:900px) {
+    .main-entry p{
+     font-size: 30px;    
+     letter-spacing: .7rem;
+    }
+}
+@keyframes me {
+    from{
+        display: block;
+        transform: translateX(0);
+    }
+    to{
+        display: none;
+        transform: translateX(-100%);
+    }
+}
+.main-entry2{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: rgb(15, 21, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    animation: me2 1s linear 2s forwards normal running;
+}
+.main-entry2 p{
+    color: white;
+    font-size: 100px;
+    letter-spacing: 2.7rem;
+    line-height: 1.7rem;
+}
+@media (max-width:900px) {
+    .main-entry2 p{
+        font-size: 30px;    
+        letter-spacing: .7rem;
+       }
+}
+@keyframes me2 {
+    from{
+        display: block;
+        transform: translateX(0);
+    }
+    to{
+        display: none;
+        transform: translateX(100%);
+    }
+}
+.card{
+    border-top: 8px solid rgb(255, 0, 0);
+    border-bottom: 8px solid rgb(255, 0, 0);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    overflow: hidden;
+    border-right: 1px solid rgb(14, 19, 39);
+    border-left: 1px solid rgb(14, 19, 39);
+    border-bottom-right-radius: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: rgba(0, 0, 0, 0.388);
+}
+.visit{
+    border: 1px solid rgba(0, 0, 0, 0.071);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top-left-radius: 50px;
+    /* border-bottom-right-radius: 50px; */
+    background: red;
+    color: white;
+    transition-duration: .5s;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.344);
+}
+.visit:hover{
+    color: rgb(0, 255, 76);
+}
+.india{
+    transform: translateX(15px);
+}
+.india img{
+    margin: 0;
+    width: 100px;
+    border-radius: 15px;
+    border-bottom: 5px solid red;
+    transform: translateY(70px);
+    cursor: pointer;
+    /* box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px, rgba(255, 255, 255, 0.07) 0px 16px 16px; */
+}
+@media (max-width: 900px) {
+    .india{
+        transform: translateX(0px);
+    }   
+}
+.g1, .g2, .g0, .g11{
+   display: flex;
+   flex: row;
+   width: 100px;
+   transform: translateY(110px);
+   cursor: pointer;
+}
+.g0 img{
+    border-radius: 50%;
+    width: 80px; 
+    /* border: 2px solid rgb(126, 119, 119); */
+}
+.g1 img{
+   border-radius: 50%;
+   width: 80px;
+}
+.g11 img{
+   border-radius: 50%;
+   width: 80px;
+}
+.g2 img{
+   border-radius: 50%;
+   width: 80px;
+}
+.g3, .g4, .g5, .g12{
+    width: 100px;
+    transform: translateY(120px);
+    cursor: pointer;
+}
+.g3 img{
+    transform: translateY(-10px);
+    border-radius: 50%;
+    width: 80px;
+}
+.g4 img{
+    border-radius: 50%;
+    width: 80px;
+    transform: translateY(-10px);
+}
+.g12 img{
+    border-radius: 50%;
+    width: 80px;
+    transform: translateY(-10px);
+}
+.g5 img{
+    transform: translateX(150px);
+    border-radius: 50%;
+    width: 80px;
+    transform: translateY(-10px);
+}
+.card-text{
+    color: rgba(255, 255, 255, 0.851);
+}
+#jum1{
+    border-bottom: 2px solid rgb(126, 119, 119);
+    padding-top: 40px;
+    animation: back 20s linear 0s infinite forwards normal running;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes back {
+    0%{
+        background: url('https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    15%{
+        background: url('https://www.tourmyindia.com/blog//wp-content/uploads/2018/06/Hill-Stations-Holidays.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    30%{
+        background: url('https://www.pakkaoffer.com/blog/wp-content/uploads/2021/11/63-Best-Tourist-Places-To-Visit-In-India-For-A-Perfect-Holiday-In-2020.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover; 
+        background-attachment: fixed;
+    }
+    45%{
+        background: url('https://www.planetware.com/photos-large/IND/india-top-attractions-harmandir-sahib.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    60%{
+        background: url('https://www.treebo.com/blog/wp-content/uploads/2018/01/Sikkim.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    75%{
+        background: url('https://images.thrillophilia.com/image/upload/s--ii9zTCYD--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/013/595/original/Mysore-Flickr.jpg.jpg?1458192645');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    80%{
+        background: url('https://assets.traveltriangle.com/blog/wp-content/uploads/2017/05/518.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    100%{
+        background: url('https://static.javatpoint.com/tourist-places/images/tourist-places-in-north-india3.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+#back2{
+    background: rgba(11, 15, 47, 0.612);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+.exin{
+    margin-top: 80px;
+    margin-bottom: 0;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+}
+.card-footer{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    border: none;
+    transform: translateY(-5px);
+    background: transparent;
+}
+.map{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map101{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map102{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map103{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map104{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map105{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map106{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map107{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map108{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map109{
+    background: transparent;
+    width: 180px;
+    background: red;
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+    border-bottom-right-radius: 80px;
+}
+.map:hover ~.hr{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map101:hover ~.hr1{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map102:hover ~.hr2{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map103:hover ~.hr3{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map104:hover ~.hr4{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map105:hover ~.hr5{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map106:hover ~.hr6{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map107:hover ~.hr7{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map108:hover ~.hr8{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.map109:hover ~.hr9{
+    background: rgb(0, 255, 76);
+    transform: translateX(0);
+    display: block;
+}
+.hr{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr1{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr2{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr3{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr4{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr5{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr6{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr7{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr8{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.hr9{
+    display: block;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background: rgb(255, 0, 0);
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+.map1, .map3, .map5, .map7, .map9, .map11, .map13, .map15, .map17, .map19{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition-duration: .5s;
+    transform: translateY(5px);
+    letter-spacing: .2rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.379);
+}
+.map1:hover{
+    color:rgb(0, 255, 76);
+}
+.map3:hover{
+    color: rgb(0, 255, 76);
+}
+.map5:hover{
+    color: rgb(0, 255, 76);
+}
+.map7:hover{
+    color: rgb(0, 255, 76);
+}
+.map9:hover{
+    color: rgb(0, 255, 76);
+}
+.map11:hover{
+    color: rgb(0, 255, 76);
+}
+.map13:hover{
+    color: rgb(0, 255, 76);
+}
+.map15:hover{
+    color: rgb(0, 255, 76);
+}
+.map17:hover{
+    color: rgb(0, 255, 76);
+}
+.map19:hover{
+    color: rgb(0, 255, 76);
+}
+.first, .first1, .first2, .first3, .first4, .first5, .first6, .first7, .first8, .first9{
+    transition-duration: .5s;
+    animation: fir .5s linear 0s forwards normal running;
+}
+@keyframes fir {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.second, .second1, .second2, .second3, .second4, .second5, .second6, .second7, .second8, .second9{
+    display: none;
+    transition-duration: .5s;
+    animation: sec .5s linear 0s forwards normal running;
+}
+@keyframes sec {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.map2, .map4, .map6, .map8, .map10, .map12, .map14, .map16, .map18, .map20{
+    display: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.514);
+    transition-duration: .5s;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transform: translateY(5px);
+}
+.map2:hover{
+    color: rgb(0, 255, 76);
+}
+.map4:hover{
+    color: rgb(0, 255, 76);
+}
+.map6:hover{
+    color: rgb(0, 255, 76);
+}
+.map8:hover{
+    color: rgb(0, 255, 76);
+}
+.map10:hover{
+    color: rgb(0, 255, 76);
+}
+.map12:hover{
+    color: rgb(0, 255, 76);
+}
+.map14:hover{
+    color: rgb(0, 255, 76);
+}
+.map16:hover{
+    color: rgb(0, 255, 76);
+}
+.map18:hover{
+    color: rgb(0, 255, 76);
+}
+.map20:hover{
+    color: rgb(0, 255, 76);
+}
+.over{
+    overflow: hidden;
+}
+.title{
+    text-transform: uppercase;
+    line-height: 1.7rem;
+    letter-spacing: .1rem;
+    color: rgba(255, 255, 255, 0.607);
+    border-bottom: 1px solid red;
+    padding-bottom: 4px;
+}
+#footer{
+    border-top: 2px solid red;
+}
+#footer p{
+    color: white;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+#main-container{
+    padding: 15px 0px;
+}
+#main-container p{
+    display: inline-block;
+}
+
+#main-container a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1.7rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.382);
+}
+#main-container a:hover{
+    color: rgb(204, 0, 255);
+    border: 1px solid rgba(1, 1, 1, 0.553);
+}
